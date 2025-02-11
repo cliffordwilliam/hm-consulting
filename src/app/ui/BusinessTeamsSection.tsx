@@ -52,7 +52,7 @@ const BusinessTeamsSection = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {features.map((feature, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="text-center flex flex-col items-center">
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900">
                 <svg
                   className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300"
@@ -70,9 +70,7 @@ const BusinessTeamsSection = () => {
               <h3 className="mb-2 text-xl font-bold dark:text-white">
                 {feature.title}
               </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                {feature.description}
-              </p>
+              <p>{feature.description}</p>
             </div>
           ))}
         </div>

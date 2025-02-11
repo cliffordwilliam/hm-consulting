@@ -11,7 +11,7 @@ import {
 
 export function FooterComponent() {
   return (
-    <Footer container className="bg-blue-100">
+    <Footer container className="border">
       <div className="w-full">
         <div className="grid max-w-screen-xl mx-auto justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
